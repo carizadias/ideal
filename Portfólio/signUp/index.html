@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleF.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Sing up</h1>
+
+    <br>
+    <div class="box">
+    <form action="arquivo.php" method="get"><!--vamos ver melhor quando estudarmos o backed-->
+        <label for="campo_nome">Name:</label>
+        <input id="campo_nome"type="text" placeholder="Type your name here" required>
+        
+        <br><br>
+
+        <label for="campo_email">Email:</label>
+        <input id="campo_email"type="email" placeholder="Type your email here" required>  
+        <br><br>
+
+        <label for="campo_senha">Password:</label>
+        <input id="campo_senha"type="password" placeholder="Type your password here" required> 
+        <br>
+        <br>
+
+        <input type="checkbox" name="agreed" value="agree" required ><label>Do you agree white our privacy policy</label>
+        <br>
+        <br>
+
+        <input class="buttonf" type="submit" value="Sing up" >
+        <!--dentro dessa tag vamos especificar para onde é que esse formaulario vai atraves do atributo action (geralmente arquivo do tipo PHP) -->
+
+        <h2>Leave us a comment:</h2>
+        <textarea name="menssagem" placeholder="Comment here" rows="5" cols="30"></textarea>
+        <br>
+        <br>
+
+        
+    </form>
+
+    <button >Send</button>
+    <br>
+    <br>
+    
+
+
+    <a class="button" href="../code/index.html">Back to Inicial Page</a>
+</body>
+</html>
